@@ -63,6 +63,7 @@ body .content {
     max-width: 400pt;
     line-height: 180%;
     font-family: "Fira Sans", sans-serif;
+    font-weight: lighter;
     text-align: justify;
     padding: 20pt;
 }
