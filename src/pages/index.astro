@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<div class="container mx-auto">
+		<main class="prose">
+			<h2>Hey there 👋</h2>
+			<p>
+				My name is Alexander Stromberger and I am a software developer and soon-to-be  mathematician. 
+				I am studying mathematics and computer science at the <a href="https://www.tuwien.at">Technical University of Vienna</a>. 
+				I have been an academic tutor in computer mathematics for the Institute of Analysis and Scientific Computing and helped with the organization of the <a href="https://vc2022.conf.tuwien.ac.at">15th Viennese Conference on Optimal Control and Dynamic Games</a>.
+			</p>
+			<p>
+				Meanwhile, during my studies, I am also working as a software developer for <a href="https://www.alturos.com">Alturos Destinations</a> (the creators of <a href="https://www.skiline.cc">skiline.cc</a>) on their new internal content management system or on some other innovation projects.
+			</p>
+		</main>
+		<Footer />
+		</div>
+	</body>
+</html>

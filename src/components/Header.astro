@@ -1,0 +1,19 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<div class="container mx-auto">
+	<h2 class="inline-block text-xl pt-4 pb-4 font-mono">
+		st <span class="italic">dot</span> fyi
+	</h2>
+	<nav class="mb-4">
+		<HeaderLink href="/">About</HeaderLink>
+		<HeaderLink href="/blog">Blog</HeaderLink>
+		<HeaderLink href="https://github.com/stromberger" target="_blank">GitHub</HeaderLink>
+		<HeaderLink href="https://www.linkedin.com/in/alexanderstromberger" target="_blank">LinkedIn</HeaderLink>
+	</nav>
+	</div>
+	<div class="w-full h-px bg-slate-900 mb-10"></div>
+</header>
