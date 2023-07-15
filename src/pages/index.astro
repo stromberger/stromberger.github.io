@@ -13,18 +13,25 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<div class="container mx-auto">
-		<main class="prose">
-			<h2>Hey there 👋</h2>
-			<p>
-				My name is Alexander Stromberger and I am a software developer and soon-to-be  mathematician. 
-				I am studying mathematics and computer science at the <a href="https://www.tuwien.at">Technical University of Vienna</a>. 
-				I have been an academic tutor in computer mathematics for the Institute of Analysis and Scientific Computing and helped with the organization of the <a href="https://vc2022.conf.tuwien.ac.at">15th Viennese Conference on Optimal Control and Dynamic Games</a>.
-			</p>
-			<p>
-				Meanwhile, during my studies, I am also working as a software developer for <a href="https://www.alturos.com">Alturos Destinations</a> (the creators of <a href="https://www.skiline.cc">skiline.cc</a>) on their new internal content management system or on some other innovation projects.
-			</p>
-		</main>
-		<Footer />
+			<div class="grid grid-cols-3 gap-8">
+				<img class="rounded-full" src="https://avatars.githubusercontent.com/u/6107839?s=400&u=c52ec169b09db11ee1829a1652bf12a6ff6d598b&v=4" />
+				<main class="prose col-span-2">
+						<h2>Alexander Stromberger</h2>
+						<p>
+							Welcome to my personal site! I'm Alexander Stromberger, a Mathematics and Computer Science student with a passion for skiing and mathematical optimization. 
+							I have been an Academic Tutor for Computer Mathematics at the <a href="https://www.tuwien.ac.at">TU Wien</a> and I currently work as a Software Engineer at <a href="https://www.alturos.com">Alturos Destinations</a> (the creators of <a href="https://www.skiline.cc">skiline.cc</a>).
+						</p>
+						<h3>Work and interests</h3>
+						<ul>
+							<li>Operations Research & Applied Optimization</li>
+							<li>Scientific Computing</li>
+							<li>Software Engineering (Backend)</li>
+						</ul>
+						<h3>How to contact me</h3>
+						<p>E-mail: alexander @ this domain </p>
+					</main>
+				</div>
+			<Footer />
 		</div>
 	</body>
 </html>
