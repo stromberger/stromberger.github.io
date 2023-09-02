@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Graph from '../components/Graph.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -14,19 +15,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header title={SITE_TITLE} />
 		<div class="container mx-auto">
 				<main class="prose">
-						<h2>Alexander Stromberger</h2>
+						<Graph />
+						<h2>Hi, I am Alexander Stromberger</h2>
 						<p>
-							Welcome to my personal site! I'm Alexander Stromberger, a Mathematics and Computer Science student with a passion for skiing and mathematical optimization. 
-							I have been an Academic Tutor for Computer Mathematics at the <a href="https://www.tuwien.ac.at">TU Wien</a> and I currently work as a Software Engineer at <a href="https://www.alturos.com">Alturos Destinations</a> (the creators of <a href="https://www.skiline.cc">skiline.cc</a>).
+							I'm a software engineer in Vienna, Austria.
 						</p>
-						<h3>Work and interests</h3>
-						<ul>
-							<li>Operations Research & Applied Optimization</li>
-							<li>Scientific Computing</li>
-							<li>Software Engineering (Backend)</li>
-						</ul>
-						<h3>How to contact me</h3>
-						<p>E-mail: alexander @ this domain </p>
+						<h3>Current Role</h3>
+						<p>Software Engineer in the Innovation Department of <a href="https://www.alturos.com">Alturos Destinations</a></p>
+						<h3>Interests</h3>
+						<p>Mathematics ∩ Computer Science</p>
+						<h3>Contact me</h3>
+						<p>Well, I got a riddle for you! .- .--.-. ... - .-.-.- ..-. -.-- ..</p>
 				</main>
 			<Footer />
 		</div>

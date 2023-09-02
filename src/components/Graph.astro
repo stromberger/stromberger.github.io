@@ -1,0 +1,60 @@
+---
+---
+<div class="graphContainer">
+<canvas id="x" class="graph">
+
+</canvas>
+</div>
+
+<style>
+.graph {
+  aspect-ratio: 1 / 1;
+  width: 60%;
+  max-height: 100%;
+  margin: auto;
+}
+.graphContainer {
+    display: flex;
+    align-items: center;
+}
+</style>
+
+<script>
+
+let element = document.getElementById("x")!!;
+function setupCanvas(canvas) {
+  var dpr = window.devicePixelRatio || 1;
+  var rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  var ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  return ctx;
+}
+
+
+let ctx = setupCanvas(element);
+
+// draw line
+let startPoint = [[0,0.95],[0.5,0],[0.95,0.95]];
+var v = [Math.random(), Math.random()];
+var colors = ["rgba(1,1,0.9,0.7)","rgba(1,1,0.9,0.7)","rgba(1,1,0.9,0.7)"]
+
+function iterate() {
+    let n = Math.floor(Math.random()*startPoint.length);
+    let p = startPoint[n];
+    ctx.fillStyle = colors[n];
+    let nextPoint = [0.5*(v[0]+p[0]),0.5*(v[1]+p[1])];
+    v = nextPoint;
+    //ctx.fillRect(v[0]*(ctx.canvas.height*0.5),v[1]*(ctx.canvas.width*0.5),2,2);
+    ctx.beginPath();
+    ctx.arc(v[0]*(ctx.canvas.height*0.5),v[1]*(ctx.canvas.width*0.5), 1.3, 0, 2 * Math.PI, true);
+    ctx.fill();
+}
+
+var timer = window.setInterval(iterate, 1);
+window.setInterval(function() {
+    window.clearInterval(timer);
+}, 60000);
+
+</script>
