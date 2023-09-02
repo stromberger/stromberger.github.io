@@ -23,7 +23,7 @@
 
 let element = document.getElementById("x")!!;
 function setupCanvas(canvas) {
-  var dpr = window.devicePixelRatio || 1;
+  var dpr = 1;
   var rect = canvas.getBoundingClientRect();
   canvas.width = rect.width * dpr;
   canvas.height = rect.height * dpr;
@@ -48,7 +48,7 @@ function iterate() {
     v = nextPoint;
     //ctx.fillRect(v[0]*(ctx.canvas.height*0.5),v[1]*(ctx.canvas.width*0.5),2,2);
     ctx.beginPath();
-    ctx.arc(v[0]*(ctx.canvas.height*0.5),v[1]*(ctx.canvas.width*0.5), 1.3, 0, 2 * Math.PI, true);
+    ctx.arc(v[0]*(ctx.canvas.height),v[1]*(ctx.canvas.width), 1.3, 0, 2 * Math.PI, true);
     ctx.fill();
 }
 
