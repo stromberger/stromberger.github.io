@@ -10,4 +10,7 @@
 	html {
 		font-family: Proxima Nova, system-ui, sans-serif;
 	}
+	.prose {
+		max-width: max-content !important;
+	}
 }
