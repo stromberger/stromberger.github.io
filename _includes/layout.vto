@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>st.fyi - Blog</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+  </head>
+  </head>
+  <body>
+  <div class="container mx-auto max-w-2xl">
+    <main>
+        <div class="border-b border-slate-300 p-2 pt-8 pb-4 font-mono">
+         <h1><a href="/">st.fyi ~ complexity bad, very bad</a></h1>
+        </div>
+        {{ if title == "Alexander Stromberger"}}
+        <img class="pt-4" src="boid.gif">
+        {{ /if }}
+        <div class="pt-8 pb-4 prose pl-2 pr-2">
+        <h1>{{ title }}</h1>
+        </div>
+        <div class="prose pl-2 pr-2 pb-16">
+        {{ content }}
+        </div>
+    </main>
+  </div>
+  <script>
+      renderMathInElement(
+          document.body,
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "\\[", right: "\\]", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\(", right: "\\)", display: false}
+              ]
+          }
+      );
+    </script>
+  </body>
+</html>
