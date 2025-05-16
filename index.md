@@ -37,5 +37,8 @@ Builds on the results of *"Optimal Content Placement for a Large-Scale VoD Syste
     <a href="/posts/fib" class="hover:underline">Squaring Fibonacci Numbers without Multiplication</a>
     <div class="text-sm text-gray-500 mt-1">Published on <span class="font-medium">Feb 1, 2025</span></div>
   </div>
-  <!-- Add more posts here -->
+   <div class="pb-4">
+    <a href="/posts/passion" class="hover:underline">Software development is my passion?</a>
+    <div class="text-sm text-gray-500 mt-1">Published on <span class="font-medium">Sep 1, 2022</span></div>
+  </div>
 </div>
