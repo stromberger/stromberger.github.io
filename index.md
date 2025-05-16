@@ -4,7 +4,7 @@ title: Alexander Stromberger
 
 Innovating tourism at [Alturos AG](https://www.alturos.com) and studying Software Engineering at TU Wien.
 
-Work & Research Interests: Software Reliability, Mathematical Optimization, Program Analysis & Verification.
+Work & Research Interests: Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism.
 
 <div class="flex gap-2 mt-4 text-sm">
   <a href="https://www.linkedin.com/in/alexanderstromberger/"
