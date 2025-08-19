@@ -26,7 +26,7 @@
         <h2>{{ title }}</h2>
         {{ if title != "Alexander Stromberger"}}
         <div class="text-gray-500 text-sm mb-6">
-    <div class="mb-1">{{ date }}</div>
+    <div class="mb-1">{{ date |> date("EEEE, MMMM d, yyyy") }}</div>
         <div class="font-medium">{{ author }}</div>
 </div>
         {{ /if }}

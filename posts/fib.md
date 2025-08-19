@@ -1,6 +1,7 @@
 ---
 title: Squaring Fibonacci Numbers without Multiplication
 author: Alexander Stromberger
+date: 2025-02-01
 ---
 
 I got an interesting exercise this semester in formal methods:

@@ -2,9 +2,9 @@
 title: Alexander Stromberger
 ---
 
-Innovating tourism at [Alturos AG](https://www.alturos.com) and studying Software Engineering at TU Wien.
+<p>Innovating tourism at <a href="https://www.alturos.com">Alturos AG</a> and studying Software Engineering at TU Wien.</p>
 
-Work & Research Interests: Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism.
+<p>Work & Research Interests: Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism.</p>
 
 <div class="flex gap-2 mt-4 text-sm">
   <a href="https://www.linkedin.com/in/alexanderstromberger/"
@@ -24,21 +24,21 @@ Work & Research Interests: Software Reliability, Mathematical Optimization, Prog
   </a>
 </div>
 
-## Work
+<h2>Work</h2>
 
-**Optimizing caching strategies for video streaming services using methods of operations research (bachelor thesis)**  
-Builds on the results of *"Optimal Content Placement for a Large-Scale VoD System"* by Applegate et al..  
-[Github Repo](https://github.com/stromberger/bachelorarbeit)
+<p><strong>Optimizing caching strategies for video streaming services using methods of operations research (bachelor thesis)</strong><br>
+Builds on the results of <em>"Optimal Content Placement for a Large-Scale VoD System"</em> by Applegate et al..<br>
+<a href="https://github.com/stromberger/bachelorarbeit">Github Repo</a></p>
 
-## Posts
+<h2>Posts</h2>
 
 <div class="space-y-4">
+{{ for post of search.pages("url^=/posts/", "date=desc") }}
+  {{ if post.title }}
   <div class="pb-4">
-    <a href="/posts/fib" class="hover:underline">Squaring Fibonacci Numbers without Multiplication</a>
-    <div class="text-sm text-gray-500 mt-1">Published on <span class="font-medium">Feb 1, 2025</span></div>
+    <a href="{{ post.url }}" class="hover:underline">{{ post.title }}</a>
+    <div class="text-sm text-gray-500 mt-1">Published on <span class="font-medium">{{ post.date |> date("MMM d, yyyy") }}</span></div>
   </div>
-   <div class="pb-4">
-    <a href="/posts/passion" class="hover:underline">Software development is my passion?</a>
-    <div class="text-sm text-gray-500 mt-1">Published on <span class="font-medium">Sep 1, 2022</span></div>
-  </div>
+  {{ /if }}
+{{ /for }}
 </div>
