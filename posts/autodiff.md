@@ -2,6 +2,7 @@
 title: Differentiable Programming using C++
 author: Alexander Stromberger
 date: 2025-08-19
+excerpt: Learn how to implement forward mode automatic differentiation in C++ using dual numbers and operator overloading, with practical applications in gradient descent optimization.
 ---
 
 _This essay was done as part of the Bjarne Stroustrup's Software Design with C++ course at Aarhus University._

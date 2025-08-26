@@ -2,13 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>st.fyi - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if title != "Alexander Stromberger" }}{{ title }} - Alexander Stromberger{{ else }}{{ title }} - Software Engineer & Researcher{{ /if }}</title>
+    <meta name="description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
+    <meta name="author" content="Alexander Stromberger">
+    <link rel="canonical" href="{{ site.url }}{{ url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ if title != "Alexander Stromberger" }}article{{ else }}website{{ /if }}">
+    <meta property="og:url" content="{{ site.url }}{{ url }}">
+    <meta property="og:title" content="{{ if title != "Alexander Stromberger" }}{{ title }}{{ else }}{{ title }} - Software Engineer & Researcher{{ /if }}">
+    <meta property="og:description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
+    <meta property="og:site_name" content="Alexander Stromberger">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="{{ site.url }}{{ url }}">
+    <meta property="twitter:title" content="{{ if title != "Alexander Stromberger" }}{{ title }}{{ else }}{{ title }} - Software Engineer & Researcher{{ /if }}">
+    <meta property="twitter:description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
+    
     <link rel="stylesheet" href="/styles.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
-  </head>
   </head>
   <body>
   <div class="container mx-auto max-w-2xl mt-12">

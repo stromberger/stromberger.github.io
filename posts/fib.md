@@ -2,6 +2,7 @@
 title: Squaring Fibonacci Numbers without Multiplication
 author: Alexander Stromberger
 date: 2025-02-01
+excerpt: Discover an elegant mathematical solution to compute squared Fibonacci numbers using only addition through recurrence relations and algebraic manipulation.
 ---
 
 I got an interesting exercise this semester in formal methods:
