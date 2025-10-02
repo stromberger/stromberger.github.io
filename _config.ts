@@ -16,6 +16,7 @@ site.data("site", {
 });
 site.copy("boid.gif");
 site.copy("robots.txt");
+site.copy("profile.jpeg");
 
 site.use(date());
 site.use(sitemap());
