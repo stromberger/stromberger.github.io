@@ -11,14 +11,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{{ if title != "Alexander Stromberger" }}article{{ else }}website{{ /if }}">
     <meta property="og:url" content="{{ site.url }}{{ url }}">
-    <meta property="og:title" content="{{ if title != "Alexander Stromberger" }}{{ title }}{{ else }}{{ title }} - Software Engineer & Researcher{{ /if }}">
+    <meta property="og:title" content="{{ if title != "Alexander Stromberger" }}{{ title }}{{ else }}{{ title }} - Software Engineer{{ /if }}">
     <meta property="og:description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
     <meta property="og:site_name" content="Alexander Stromberger">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="{{ site.url }}{{ url }}">
-    <meta property="twitter:title" content="{{ if title != "Alexander Stromberger" }}{{ title }}{{ else }}{{ title }} - Software Engineer & Researcher{{ /if }}">
+    <meta property="twitter:title" content="{{ if title != "Alexander Stromberger" }}{{ title }}{{ else }}{{ title }} - Software Engineer{{ /if }}">
     <meta property="twitter:description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
     
     <link rel="stylesheet" href="/styles.css">
