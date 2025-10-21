@@ -1,5 +1,0 @@
-[phases.setup]
-nixPkgs = ['deno']
-
-[phases.build]
-cmds = ['deno task build']
