@@ -19,3 +19,8 @@ h1, h2, h3, .prose h2, .prose h1, .prose h3 {
 p {
     @apply text-center text-justify;
 }
+
+code::before,
+code::after {
+    content: none !important;
+}
