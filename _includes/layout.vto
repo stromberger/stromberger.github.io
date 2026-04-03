@@ -7,6 +7,16 @@
     <meta name="description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
     <meta name="author" content="Alexander Stromberger">
     <link rel="canonical" href="{{ site.url }}{{ url }}">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XFBZHCF6G"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5XFBZHCF6G');
+    </script>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{{ if title != "Alexander Stromberger" }}article{{ else }}website{{ /if }}">
@@ -28,7 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
   </head>
   <body>
-  <div class="container mx-auto max-w-2xl mt-12 px-4">
+  <div class="container mx-auto max-w-3xl mt-12 px-4">
     <main>
         {{ if title != "Alexander Stromberger"}}
 <a href="/index.html" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300 ease-in-out">
@@ -39,8 +49,8 @@
     <span class="font-medium">Back to home</span>
 </a>
         {{ /if }}
-        <div class="pt-8 pb-4 prose pl-2 pr-2">
-        {{ if title == "Alexander Stromberger"}}<img src="/profile.jpeg" alt="Profile picture" class="mb-4 lg:float-left lg:-ml-44 lg:mr-4 lg:mt-14 w-32 h-32 rounded-full object-cover shrink-0 block lg:inline mx-auto lg:mx-0">{{ /if }}
+        <div class="pt-8 pb-4 prose max-w-none pl-2 pr-2">
+        {{ if title == "Alexander Stromberger"}}<img src="/profile.jpeg" alt="Profile picture" class="mb-4 lg:float-left lg:-ml-44 xl:-ml-44 lg:mr-4 lg:mt-14 w-32 h-32 rounded-full object-cover shrink-0 block lg:inline mx-auto lg:mx-0">{{ /if }}
         <h2>{{ title }}</h2>
         {{ if title != "Alexander Stromberger"}}
         <div class="text-gray-500 text-sm mb-6">
@@ -48,7 +58,7 @@
         <div class="font-medium">{{ author }}</div>
 </div>
         {{ /if }}
-        <div class="prose pb-16">
+        <div class="prose max-w-none pb-16">
         {{ content }}
         </div>
     </main>
