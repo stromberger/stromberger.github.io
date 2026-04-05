@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ if title != "Alexander Stromberger" }}{{ title }} - Alexander Stromberger{{ else }}{{ title }} - PreDoc Researcher{{ /if }}</title>
-    <meta name="description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger - Software Engineer & Researcher specializing in Software Reliability, Mathematical Optimization, Program Analysis & Verification, Digital Tourism{{ /if }}">
+    <title>{{ if title != "Alexander Stromberger" }}{{ title }} - Alexander Stromberger{{ else }}{{ title }}{{ /if }}</title>
+    <meta name="description" content="{{ if title != "Alexander Stromberger" }}{{ excerpt || (content |> slice(0, 160)) }}{{ else }}Alexander Stromberger{{ /if }}">
     <meta name="author" content="Alexander Stromberger">
     <link rel="canonical" href="{{ site.url }}{{ url }}">
 
