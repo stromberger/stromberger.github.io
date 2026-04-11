@@ -2,6 +2,6 @@
   "name": "st.fyi",
   "version": "1.0.0",
   "scripts": {
-    "build": "deno task build"
+    "build": "./build.sh"
   }
 }
