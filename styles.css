@@ -12,12 +12,20 @@
 @tailwind utilities;
 @plugin '@tailwindcss/typography';
 
+body {
+    @apply bg-blue-50/5;
+}
+
 h1, h2, h3, .prose h2, .prose h1, .prose h3 {
-    @apply doto;
+    @apply doto text-blue-950;
 }
 
 p {
     @apply text-center text-justify;
+}
+
+a {
+    @apply text-blue-700 hover:text-blue-900 transition-colors;
 }
 
 code::before,

@@ -4,8 +4,6 @@ author: Alexander Stromberger
 date: 2025-12-01
 ---
 
-**THIS PAGE IS WIP**
-
 ## SMT2 Operators
 
 To declare a variable to be a `FiniteSet` of `S`:
